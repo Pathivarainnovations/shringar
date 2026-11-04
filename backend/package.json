@@ -1,0 +1,26 @@
+{
+  "name": "shringar-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "init-reference-data": "node scripts/init-reference-data.js",
+    "seed": "node scripts/seed-providers-customers.js",
+    "seed:users": "node scripts/seed-users.js",
+    "backup": "node scripts/backup-db.js",
+    "reset-dev-db": "node scripts/reset-dev-db.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemailer": "^7.0.13",
+    "ws": "^8.22.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
