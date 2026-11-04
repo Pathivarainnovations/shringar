@@ -27,3 +27,9 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo

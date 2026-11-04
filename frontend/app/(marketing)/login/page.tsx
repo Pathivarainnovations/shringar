@@ -6,8 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useT } from "@/components/i18n";
 import { useAuth } from "@/lib/auth-context";
 import { ROLE_HOME } from "@/lib/roles";
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
+import { API_URL } from "@/lib/api";
 
 type View = "signin" | "otp" | "signup" | "signup-code" | "forgot" | "reset";
 
